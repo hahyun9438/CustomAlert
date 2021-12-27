@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="hhyunlib_center_alret_width">330dp</dimen>
+    <dimen name="hhyunlib_center_alret_radius">10dp</dimen>
+    <dimen name="hhyunlib_center_alret_button_height">45dp</dimen>
+
+    <dimen name="hhyunlib_center_alret_horizontal_padding_default">20dp</dimen>
+    <dimen name="hhyunlib_center_alret_vertical_padding_default">27.5dp</dimen>
+    <dimen name="hhyunlib_center_alret_gap_padding_default">2.5dp</dimen>
+
+
+
+</resources>

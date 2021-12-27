@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flPopupParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.hhyun.customalertlibrary.ui.shadow.ShadowConstraintLayout
+        android:id="@+id/sclSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shadowBlurSize="15dp"
+        app:shadowY="5dp"
+        app:shadowColor="@color/hhyunlib_transparent_20_black"
+        app:shadowBgRadius="10dp"
+        app:shadowBorderColor="@color/hhyunlib_grey_333"
+        app:shadowBorderSize="1dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:paddingBottom="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/hhyunlib_transparent_20_black"
+            >
+
+            <LinearLayout
+                android:id="@+id/llHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_height="36dp"
+                />
+
+            <com.hhyun.customalertlibrary.ui.scrollview.MaxHeightScrollView
+                android:id="@+id/sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llHeader"
+                tools:layout_height="300dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/llSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="top"
+                    android:layout_gravity="top"
+                    android:paddingBottom="30dp"
+                    />
+
+            </com.hhyun.customalertlibrary.ui.scrollview.MaxHeightScrollView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/v_shading"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:src="@drawable/hhyunlib_spinner_radius_10_gradient"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="1dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </com.hhyun.customalertlibrary.ui.shadow.ShadowConstraintLayout>
+
+</FrameLayout>

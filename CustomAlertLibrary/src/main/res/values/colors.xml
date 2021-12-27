@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hhyunlib_transparent">#00000000</color>
+
+    <color name="hhyunlib_black">#000000</color>
+    <color name="hhyunlib_transparent_80_black">#CC000000</color>
+    <color name="hhyunlib_transparent_60_black">#99000000</color>
+    <color name="hhyunlib_transparent_30_black">#4D000000</color>
+    <color name="hhyunlib_transparent_20_black">#33000000</color>
+    <color name="hhyunlib_transparent_8_black">#14000000</color>
+
+    <color name="hhyunlib_grey_333">#333333</color>
+    <color name="hhyunlib_grey_666">#666666</color>
+    <color name="hhyunlib_grey_ddd">#dddddd</color>
+
+
+    <drawable name="hhyunlib_transparent">#00000000</drawable>
+
+
+</resources>

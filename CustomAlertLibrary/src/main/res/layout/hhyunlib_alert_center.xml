@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    tools:background="@color/hhyunlib_transparent_60_black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/hhyunlib_center_alret_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hhyunlib_center_alert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/hhyunlib_center_alret_horizontal_padding_default"
+            android:paddingVertical="@dimen/hhyunlib_center_alret_vertical_padding_default"
+            app:layout_constraintBottom_toTopOf="@+id/layoutCustom"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/hhyunlib_black"
+                android:textSize="17dp"
+                android:paddingVertical="@dimen/hhyunlib_center_alret_gap_padding_default"
+                android:includeFontPadding="false"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Title"
+                tools:visibility="visible"
+                />
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/hhyunlib_black"
+                android:textSize="15dp"
+                android:paddingVertical="@dimen/hhyunlib_center_alret_gap_padding_default"
+                android:includeFontPadding="false"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/tvTitle"
+                tools:text="description"
+                tools:visibility="visible"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintTop_toBottomOf="@id/llContent">
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hhyunlib_grey_ddd"
+            app:layout_constraintTop_toBottomOf="@id/layoutCustom" />
+
+        <LinearLayout
+            android:id="@+id/twoButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider">
+
+            <TextView
+                android:id="@+id/btnNegative"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/hhyunlib_center_alret_button_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/hhyunlib_black"
+                android:textSize="15dp"
+                tools:text="cancel" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/hhyunlib_center_alret_button_height"
+                android:background="@color/hhyunlib_transparent_8_black" />
+
+            <TextView
+                android:id="@+id/btnPositive"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/hhyunlib_center_alret_button_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/hhyunlib_black"
+                android:textSize="15dp"
+                tools:text="ok" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnNeutral"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hhyunlib_center_alret_button_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/hhyunlib_black"
+            android:textSize="15dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            tools:text="취소" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
